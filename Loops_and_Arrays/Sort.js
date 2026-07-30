@@ -1,6 +1,6 @@
-arr = [2,4,3,5,6,1,8,7,9]
+let arr = [2,4,3,5,6,1,8,7,9]
 
- rev_arr=arr.reverse()
+let rev_arr=arr.reverse()
 
  console.log(rev_arr)
 
