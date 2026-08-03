@@ -5,22 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .hulu{
-            color: red;
-            background-color: aquamarine;
-            font-family: Gilroy;
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;  
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            height: 100%;
+        }
+        h1 {
+            font-family: "Gilroy", sans-serif;
+            font-size: 100px;
+            color: #555;
+            user-select: none;
         }
     </style>
 </head>
 <body style = "background-color: black; color: white;">
-    <h1>Select ur Car</h1>
-    <select name="cars" id="cars">
-        <option value="" selected disabled>select an option</option>
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
-    </select>
-    <script src="change.js"></script>
+    <div class="main">
+        <h1>Window</h1>
+    </div>
+    <script src="window.js"></script>
 </body>
 </html>
