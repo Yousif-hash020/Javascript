@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh; 
+            background: #000; 
+            overflow: hidden;
+            position: relative;
+        }
+        h1{
+            font-size: 100px;
+            color: #555;
+            max-width: 800px;
+            min-height:200px;
+            background-color: rgb(20, 48, 39);
+            text-align: center;
+            line-height: 200px;
+        }
+        #circle{
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            background-color: rgb(39, 184, 138);
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        #main{
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="main">
+        <h1>Move Around</h1>
+
+        <div id="circle"></div>
+
+    </div>
+    <script src="Moving_img_with_mouse.js"></script>
+</body>
+</html>
