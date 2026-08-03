@@ -20,16 +20,26 @@
         }
         h1 {
             font-family: "Gilroy", sans-serif;
-            font-size: 100px;
-            color: #555;
             user-select: none;
+            background-color: rgb(37, 119, 135);
+            padding: 7px 8px;
+            font-size: 12px;
+            border-radius: 5px;
+            text-transform: capitalize;
+            cursor: pointer;
         }
+
+        #fileInput {
+            display: none;
+        }
+
     </style>
 </head>
 <body style = "background-color: black; color: white;">
     <div class="main">
-        <h1>Window</h1>
+        <input type="file" id="fileInput">
+        <h1 title="Choose File">upload file</h1>
     </div>
-    <script src="window.js"></script>
+    <script src="fileinp.js"></script>
 </body>
 </html>
