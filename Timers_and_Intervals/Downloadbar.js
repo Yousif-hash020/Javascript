@@ -10,6 +10,7 @@ let interval = setInterval(function(){
     }
 
     else{
+        document.querySelector("#title").textContent = "Downloaded"
         clearInterval(interval)
     }
 
