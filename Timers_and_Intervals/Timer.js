@@ -2,8 +2,8 @@ let count = 10;
 
 let interval = setInterval(function(){
     if(count>=1){
-        count--;
         console.log(count);
+        count--;
     }
     else{
         clearInterval(interval);
