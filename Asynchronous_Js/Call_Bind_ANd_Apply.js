@@ -3,9 +3,14 @@ let obj = {
     Age : 26
 }
 
-function abcd(){
-    console.log(this);
+function abcd(a,b,c){
+    console.log(this,a,b,c);
 }
 
-abcd.call(obj);
+abcd.call(obj,1,2,3);
 
+
+abcd.apply(obj, [3,2,1]);
+
+let fn = abcd.bind(obj,4,5,6);
+fn();
