@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Random Users</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            background:#0f172a;
+            color:white;
+        }
+
+        .container{
+            width:90%;
+            margin:40px auto;
+        }
+
+        h1{
+            text-align:center;
+            margin-bottom:30px;
+        }
+
+        .main{
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:20px;
+        }
+
+        .user-card{
+            width:250px;
+            background:#111827;
+            border:1px solid #334155;
+            border-radius:12px;
+            padding:20px;
+            text-align:center;
+            box-shadow:0 5px 15px rgba(0,0,0,.3);
+        }
+
+        .user-card img{
+            width:120px;
+            height:120px;
+            border-radius:50%;
+            object-fit:cover;
+            margin-bottom:15px;
+        }
+
+        .user-card h2{
+            margin-bottom:10px;
+        }
+
+        .user-card p{
+            margin:8px 0;
+            color:#cbd5e1;
+        }
+    </style>
 </head>
 <body>
-    <Script src="Asynch_Await.js"></Script>
+
+<script src="Fetch.js"></script>
+
 </body>
 </html>
