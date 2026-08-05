@@ -1,4 +1,4 @@
-function createPencil(name, price, color, company){
+function CreatePencil(name, price, color, company){
     this.name = name;
     this.price = price;
     this.color = color;
@@ -11,9 +11,9 @@ function createPencil(name, price, color, company){
     }
 }
 
- let pencil1 = new createPencil("pencil", 10, "green", "dollar");
- let pencil2 = new createPencil("pencil", 12, "blue", "dollar");
- let pencil3 = new createPencil("pencil", 15, "red", "dollar");
+ let pencil1 = new CreatePencil("pencil", 10, "green", "dollar");
+ let pencil2 = new CreatePencil("pencil", 12, "blue", "dollar");
+ let pencil3 = new CreatePencil("pencil", 15, "red", "dollar");
 
 
 pencil1.write("hy how r u");
