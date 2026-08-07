@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #0d0d0d;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        #main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #registerform {
+            padding: 30px;
+            width: 260px;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(29, 158, 115);
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        #registerform h2 {
+            margin: 0 0 10px 0;
+            text-align: center;
+        }
+
+        input {
+            padding: 10px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 5px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        input:focus {
+            box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.4);
+        }
+
+        button {
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #0d0d0d;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #222;
+        }
+
+        #message {
+            margin-top: 15px;
+            font-size: 14px;
+            text-align: center;
+            min-height: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <form action="" id="registerform">
+            <h2>Register</h2>
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button type="submit">Register</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="register.js"></script>
+</body>
+
+</html>
