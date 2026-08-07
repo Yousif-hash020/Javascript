@@ -3,6 +3,7 @@ let nme = document.querySelector("#name");
 let email = document.querySelector("#email");
 let age = document.querySelector("#age");
 
+
 const deleteUser = async (id) => {
 
     const response = await fetch(
@@ -56,18 +57,17 @@ const getmethod = async () => {
         const actions = document.createElement("div");
         actions.classList.add("card-actions");
 
-
         // Update button
         const updateBtn = document.createElement("button");
         updateBtn.textContent = "Update";
-
+    
 
         // Delete button
         const deleteBtn = document.createElement("button");
         deleteBtn.textContent = "Delete";
         deleteBtn.classList.add("delete-btn");
 
-        deleteBtn.addEventListener("click", ()=>{
+        deleteBtn.addEventListener("click", () => {
             deleteUser(user.id)
         });
 
@@ -90,9 +90,7 @@ const getmethod = async () => {
     });
 };
 
-
-
-form.addEventListener("submit", async (e) =>{
+form.addEventListener("submit", async (e) => {
     e.preventDefault();
     let users = {
         name: nme.value,
@@ -100,12 +98,12 @@ form.addEventListener("submit", async (e) =>{
         age: age.value
     }
 
-    const response = await fetch("http://localhost:5000/api/users",{
+    const response = await fetch("http://localhost:5000/api/users", {
         method: "POST",
 
-        headers:{
-            "Content-Type" : "application/json"
-        }, 
+        headers: {
+            "Content-Type": "application/json"
+        },
 
 
         body: JSON.stringify(users)
@@ -120,5 +118,7 @@ form.addEventListener("submit", async (e) =>{
     form.reset();
     await getmethod
 });
+
+
 
 getmethod();
