@@ -25,7 +25,7 @@ register.addEventListener("submit", async (e) => {
         localStorage.setItem("token", data.token);
         localStorage.setItem("user", JSON.stringify(data.user));
         document.querySelector("#message").textContent = data.message;
-        console.log(data);
+
         register.reset();
 
     } catch (err) {
