@@ -118,7 +118,7 @@ form.addEventListener("submit", async (e) =>{
     console.log(data);
 
     form.reset();
-    await getmethod();
+    await getmethod
 });
 
 getmethod();
