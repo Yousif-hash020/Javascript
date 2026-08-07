@@ -28,7 +28,6 @@ const getmethod = async () => {
 
     const usersContainer = document.querySelector("#usersContainer");
 
-    // Purane cards remove karo
     usersContainer.innerHTML = "";
 
     data.forEach(user => {
@@ -116,9 +115,7 @@ form.addEventListener("submit", async (e) => {
     console.log(data);
 
     form.reset();
-    await getmethod
+    await getmethod();
 });
-
-
 
 getmethod();
